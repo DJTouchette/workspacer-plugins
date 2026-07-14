@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "catalog": "https://github.com/DJTouchette/workspacer-plugins",
+  "plugins": [
+    {
+      "id": "djtouchette.cost-hud",
+      "name": "Cost HUD",
+      "dir": "cost-hud",
+      "category": "dashboards",
+      "kind": "webview",
+      "icon": "💰",
+      "description": "A slim always-on spend + rate-limit heads-up display.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-cost-hud",
+      "install": "DJTouchette/workspacer-plugin-cost-hud",
+      "panes": [
+        "Cost HUD"
+      ],
+      "capabilities": [
+        "agents.list"
+      ],
+      "consumes": [
+        "agent.statusline",
+        "agent.snapshot"
+      ],
+      "emits": [
+        "command.focus_agent"
+      ],
+      "settings": []
+    },
+    {
+      "id": "djtouchette.fleet-radar",
+      "name": "Fleet Radar",
+      "dir": "fleet-radar",
+      "category": "dashboards",
+      "kind": "webview",
+      "icon": "📡",
+      "description": "Always-on big-screen view of your whole agent fleet.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-fleet-radar",
+      "install": "DJTouchette/workspacer-plugin-fleet-radar",
+      "panes": [
+        "Fleet Radar"
+      ],
+      "capabilities": [
+        "agents.list"
+      ],
+      "consumes": [
+        "agent.snapshot",
+        "agent.state_changed",
+        "workflow.*"
+      ],
+      "emits": [
+        "command.focus_agent"
+      ],
+      "settings": []
+    },
+    {
+      "id": "djtouchette.focus-tracker",
+      "name": "Focus Tracker",
+      "dir": "focus-tracker",
+      "category": "dashboards",
+      "kind": "webview",
+      "icon": "🎯",
+      "description": "Wakatime-style view of where your attention goes across agents.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-focus-tracker",
+      "install": "DJTouchette/workspacer-plugin-focus-tracker",
+      "panes": [
+        "Focus Tracker"
+      ],
+      "capabilities": [
+        "agents.list"
+      ],
+      "consumes": [
+        "ui.pane.focused",
+        "ui.tab.focused",
+        "ui.workspace.focused",
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": []
+    },
+    {
+      "id": "djtouchette.ci-watcher",
+      "name": "CI Watcher",
+      "dir": "ci-watcher",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🚦",
+      "description": "Watch CI after a push and feed failures back to the agent.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-ci-watcher",
+      "install": "DJTouchette/workspacer-plugin-ci-watcher",
+      "panes": [
+        "CI Watcher"
+      ],
+      "capabilities": [
+        "git.status",
+        "agents.sendMessage",
+        "notifications.post"
+      ],
+      "consumes": [
+        "workflow.completed",
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": [
+        "pollSeconds",
+        "repo"
+      ]
+    },
+    {
+      "id": "djtouchette.escalation-chains",
+      "name": "Escalation Chains",
+      "dir": "escalation-chains",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🔗",
+      "description": "Self-healing fleet: auto-spawn a successor when an agent fails.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-escalation-chains",
+      "install": "DJTouchette/workspacer-plugin-escalation-chains",
+      "panes": [
+        "Escalation Chains"
+      ],
+      "capabilities": [
+        "agents.spawn",
+        "agents.sendMessage",
+        "claude.handoffBrief",
+        "notifications.post"
+      ],
+      "consumes": [
+        "workflow.failed",
+        "agent.state_changed"
+      ],
+      "emits": [
+        "command.spawn_agent"
+      ],
+      "settings": [
+        "maxRetries",
+        "successorModel"
+      ]
+    },
+    {
+      "id": "djtouchette.fleet-guardian",
+      "name": "Fleet Guardian",
+      "dir": "fleet-guardian",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🛡",
+      "description": "Autonomy with brakes: pause on rate limits, downgrade on budget.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-fleet-guardian",
+      "install": "DJTouchette/workspacer-plugin-fleet-guardian",
+      "panes": [
+        "Fleet Guardian"
+      ],
+      "capabilities": [
+        "agents.list",
+        "claude.signal",
+        "claude.setModel",
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.snapshot",
+        "agent.statusline"
+      ],
+      "emits": [],
+      "settings": [
+        "rateLimitPct",
+        "budgetUSD",
+        "downgradeModel"
+      ]
+    },
+    {
+      "id": "djtouchette.policy-approver",
+      "name": "Policy Approver",
+      "dir": "policy-approver",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "⚖️",
+      "description": "Auto-approve safe tools, hard-block dangerous ones.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-policy-approver",
+      "install": "DJTouchette/workspacer-plugin-policy-approver",
+      "panes": [
+        "Policy Approver"
+      ],
+      "capabilities": [
+        "sessions.snapshot",
+        "claude.approve",
+        "claude.gate",
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": [
+        "autoApproveReadonly",
+        "blockPatterns"
+      ]
+    },
+    {
+      "id": "djtouchette.test-on-save",
+      "name": "Test on Save",
+      "dir": "test-on-save",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🧪",
+      "description": "Run the test suite when an agent edits code; feed results back.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-test-on-save",
+      "install": "DJTouchette/workspacer-plugin-test-on-save",
+      "panes": [
+        "Test on Save"
+      ],
+      "capabilities": [
+        "agents.sendMessage",
+        "notifications.post"
+      ],
+      "consumes": [
+        "fs.changed",
+        "agent.state_changed",
+        "agent.snapshot"
+      ],
+      "emits": [],
+      "settings": [
+        "testCommand",
+        "debounceMs"
+      ]
+    },
+    {
+      "id": "djtouchette.typecheck-gate",
+      "name": "Typecheck Gate",
+      "dir": "typecheck-gate",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🚪",
+      "description": "Don't let an agent 'finish' with a red typecheck.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-typecheck-gate",
+      "install": "DJTouchette/workspacer-plugin-typecheck-gate",
+      "panes": [
+        "Typecheck Gate"
+      ],
+      "capabilities": [
+        "claude.gate",
+        "agents.sendMessage",
+        "agents.list",
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": [
+        "checkCommand"
+      ]
+    },
+    {
+      "id": "djtouchette.phone-push",
+      "name": "Phone Push",
+      "dir": "phone-push",
+      "category": "reach",
+      "kind": "sidecar",
+      "icon": "📱",
+      "description": "The lightest possible remote awareness — push needs-you moments to your phone.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-phone-push",
+      "install": "DJTouchette/workspacer-plugin-phone-push",
+      "panes": [
+        "Phone Push"
+      ],
+      "capabilities": [
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": [
+        "provider",
+        "target",
+        "pushoverToken"
+      ]
+    },
+    {
+      "id": "djtouchette.slack-bridge",
+      "name": "Slack Bridge",
+      "dir": "slack-bridge",
+      "category": "reach",
+      "kind": "sidecar",
+      "icon": "💬",
+      "description": "Monitor and steer your fleet from Slack/Discord — bidirectionally.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-slack-bridge",
+      "install": "DJTouchette/workspacer-plugin-slack-bridge",
+      "panes": [
+        "Slack Bridge"
+      ],
+      "capabilities": [
+        "notifications.post",
+        "claude.approve",
+        "claude.answer",
+        "claude.setPermissionMode",
+        "sessions.snapshot"
+      ],
+      "consumes": [
+        "agent.state_changed",
+        "workflow.completed",
+        "workflow.failed"
+      ],
+      "emits": [],
+      "settings": [
+        "webhookUrl",
+        "botToken",
+        "channel"
+      ]
+    },
+    {
+      "id": "djtouchette.standup-digest",
+      "name": "Standup Digest",
+      "dir": "standup-digest",
+      "category": "reach",
+      "kind": "sidecar",
+      "icon": "📰",
+      "description": "A daily \"what the fleet did\" report.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-standup-digest",
+      "install": "DJTouchette/workspacer-plugin-standup-digest",
+      "panes": [
+        "Standup Digest"
+      ],
+      "capabilities": [
+        "analytics.summary",
+        "analytics.recent",
+        "git.numstat",
+        "notifications.post"
+      ],
+      "consumes": [
+        "workflow.completed",
+        "workflow.failed"
+      ],
+      "emits": [],
+      "settings": [
+        "postTime",
+        "webhookUrl"
+      ]
+    }
+  ]
+}

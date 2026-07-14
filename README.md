@@ -4,6 +4,8 @@ Official plugin catalog for [workspacer](https://github.com/DJTouchette/workspac
 
 Each plugin lives in its own repo and installs straight from the app: **command palette → "Install Plugin…" → paste the repo** (e.g. `DJTouchette/workspacer-plugin-fleet-radar`). The hub downloads it, wires its bus token, and supervises it. All plugins are zero-dependency (Node ≥ 22 built-ins only) and MIT licensed.
 
+A machine-readable version of this catalog lives in [`index.json`](index.json) (fetch it at `https://raw.githubusercontent.com/DJTouchette/workspacer-plugins/main/index.json`) — one entry per plugin with id, category, kind, one-line description, install ref, and the permissions its manifest declares. Regenerate it with `python3 build_index.py` after adding or changing a plugin.
+
 ## The plugins
 
 ### Dashboards (webview panes)
