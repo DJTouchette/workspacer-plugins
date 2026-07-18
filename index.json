@@ -3,6 +3,27 @@
   "catalog": "https://github.com/DJTouchette/workspacer-plugins",
   "plugins": [
     {
+      "id": "djtouchette.analytics",
+      "name": "Analytics",
+      "dir": "analytics",
+      "category": "dashboards",
+      "kind": "webview",
+      "icon": "📊",
+      "description": "Historical usage analytics for your whole fleet — spend, tokens, sessions, and time agented, sliceable by day, model, project, and provider.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-analytics",
+      "install": "DJTouchette/workspacer-plugin-analytics",
+      "panes": [
+        "Analytics"
+      ],
+      "capabilities": [
+        "analytics.summary",
+        "analytics.recent"
+      ],
+      "consumes": [],
+      "emits": [],
+      "settings": []
+    },
+    {
       "id": "djtouchette.cost-hud",
       "name": "Cost HUD",
       "dir": "cost-hud",
@@ -79,6 +100,27 @@
       "settings": []
     },
     {
+      "id": "djtouchette.project-board",
+      "name": "Project Board",
+      "dir": "project-board",
+      "category": "workbench",
+      "kind": "webview",
+      "icon": "📋",
+      "description": "A kanban board per project — drag cards across columns, tag them, and the board travels with the repo.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-project-board",
+      "install": "DJTouchette/workspacer-plugin-project-board",
+      "panes": [
+        "Board"
+      ],
+      "capabilities": [
+        "fs.read",
+        "fs.write"
+      ],
+      "consumes": [],
+      "emits": [],
+      "settings": []
+    },
+    {
       "id": "djtouchette.project-notes",
       "name": "Project Notes",
       "dir": "project-notes",
@@ -94,6 +136,26 @@
       "capabilities": [
         "fs.read",
         "fs.write"
+      ],
+      "consumes": [],
+      "emits": [],
+      "settings": []
+    },
+    {
+      "id": "djtouchette.worktree-janitor",
+      "name": "Worktree Janitor",
+      "dir": "worktree-janitor",
+      "category": "workbench",
+      "kind": "sidecar",
+      "icon": "🌳",
+      "description": "See every git worktree your agents have sprouted — branch, age, dirt, merged-ness — and prune the dead ones in one click.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-worktree-janitor",
+      "install": "DJTouchette/workspacer-plugin-worktree-janitor",
+      "panes": [
+        "Worktrees"
+      ],
+      "capabilities": [
+        "agents.list"
       ],
       "consumes": [],
       "emits": [],

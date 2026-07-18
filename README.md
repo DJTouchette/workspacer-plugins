@@ -15,12 +15,15 @@ A machine-readable version of this catalog lives in [`index.json`](index.json) (
 | 📡 **Fleet Radar** | [`workspacer-plugin-fleet-radar`](https://github.com/DJTouchette/workspacer-plugin-fleet-radar) | Always-on big-screen view of your whole agent fleet — attention rings, context bars, live cost. |
 | 💰 **Cost HUD** | [`workspacer-plugin-cost-hud`](https://github.com/DJTouchette/workspacer-plugin-cost-hud) | Slim always-on spend + rate-limit heads-up display (5h / weekly / monthly windows). |
 | 🎯 **Focus Tracker** | [`workspacer-plugin-focus-tracker`](https://github.com/DJTouchette/workspacer-plugin-focus-tracker) | Wakatime-style view of where your attention goes across agents and panes. |
+| 📊 **Analytics** | [`workspacer-plugin-analytics`](https://github.com/DJTouchette/workspacer-plugin-analytics) | Historical fleet usage — spend, tokens, and sessions by day, model, project, and provider. |
 
 ### Workbench (webview panes)
 
 | Plugin | Repo | What it does |
 |---|---|---|
 | 🗒️ **Project Notes** | [`workspacer-plugin-project-notes`](https://github.com/DJTouchette/workspacer-plugin-project-notes) | Per-project markdown notes with tags — saved in the project, shared by every agent working in it. |
+| 📋 **Project Board** | [`workspacer-plugin-project-board`](https://github.com/DJTouchette/workspacer-plugin-project-board) | A kanban board per project — drag cards across columns, tag them, and the board travels with the repo. |
+| 🌳 **Worktree Janitor** | [`workspacer-plugin-worktree-janitor`](https://github.com/DJTouchette/workspacer-plugin-worktree-janitor) | See every git worktree your agents have sprouted and prune the dead ones in one click. |
 
 ### Automation (sidecars — always on, even with their pane closed)
 
