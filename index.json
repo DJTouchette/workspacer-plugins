@@ -79,6 +79,27 @@
       "settings": []
     },
     {
+      "id": "djtouchette.project-notes",
+      "name": "Project Notes",
+      "dir": "project-notes",
+      "category": "workbench",
+      "kind": "webview",
+      "icon": "🗒️",
+      "description": "Per-project markdown notes with tags — saved in the project, shared by every agent working in it.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-project-notes",
+      "install": "DJTouchette/workspacer-plugin-project-notes",
+      "panes": [
+        "Notes"
+      ],
+      "capabilities": [
+        "fs.read",
+        "fs.write"
+      ],
+      "consumes": [],
+      "emits": [],
+      "settings": []
+    },
+    {
       "id": "djtouchette.ci-watcher",
       "name": "CI Watcher",
       "dir": "ci-watcher",

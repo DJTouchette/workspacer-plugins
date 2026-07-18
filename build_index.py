@@ -27,6 +27,7 @@ CATEGORIES = {
     "typecheck-gate": "automation",
     "test-on-save": "automation",
     "ci-watcher": "automation",
+    "project-notes": "workbench",
     "slack-bridge": "reach",
     "phone-push": "reach",
     "standup-digest": "reach",
@@ -85,7 +86,7 @@ def main():
         for d in os.listdir(ROOT)
         if os.path.isfile(os.path.join(ROOT, d, "plugin.json"))
     )
-    order = {"dashboards": 0, "automation": 1, "reach": 2}
+    order = {"dashboards": 0, "workbench": 1, "automation": 2, "reach": 3}
     plugins = sorted(
         (entry(d) for d in dirs), key=lambda e: (order[e["category"]], e["dir"])
     )
