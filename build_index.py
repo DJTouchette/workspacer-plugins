@@ -28,6 +28,7 @@ CATEGORIES = {
     "test-on-save": "automation",
     "ci-watcher": "automation",
     "analytics": "dashboards",
+    "shiplight": "dashboards",
     "project-notes": "workbench",
     "project-board": "workbench",
     "worktree-janitor": "workbench",

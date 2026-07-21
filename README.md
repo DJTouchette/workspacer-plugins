@@ -16,6 +16,7 @@ A machine-readable version of this catalog lives in [`index.json`](index.json) (
 | 💰 **Cost HUD** | [`workspacer-plugin-cost-hud`](https://github.com/DJTouchette/workspacer-plugin-cost-hud) | Slim always-on spend + rate-limit heads-up display (5h / weekly / monthly windows). |
 | 🎯 **Focus Tracker** | [`workspacer-plugin-focus-tracker`](https://github.com/DJTouchette/workspacer-plugin-focus-tracker) | Wakatime-style view of where your attention goes across agents and panes. |
 | 📊 **Analytics** | [`workspacer-plugin-analytics`](https://github.com/DJTouchette/workspacer-plugin-analytics) | Historical fleet usage — spend, tokens, and sessions by day, model, project, and provider. |
+| 🚢 **Shiplight** | [`workspacer-plugin-shiplight`](https://github.com/DJTouchette/workspacer-plugin-shiplight) | Running pipelines and open PRs at a glance — one status lamp, live runs, review states, and notifications on verdicts. |
 
 ### Workbench (webview panes)
 

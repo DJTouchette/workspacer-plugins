@@ -100,6 +100,34 @@
       "settings": []
     },
     {
+      "id": "djtouchette.shiplight",
+      "name": "Shiplight",
+      "dir": "shiplight",
+      "category": "dashboards",
+      "kind": "sidecar",
+      "icon": "🚢",
+      "description": "Running pipelines and open PRs for your project, at a glance — with notifications when something needs you.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-shiplight",
+      "install": "DJTouchette/workspacer-plugin-shiplight",
+      "panes": [
+        "Shiplight"
+      ],
+      "capabilities": [
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.state_changed"
+      ],
+      "emits": [],
+      "settings": [
+        "repo",
+        "token",
+        "pollSeconds",
+        "notifyRuns",
+        "notifyPrs"
+      ]
+    },
+    {
       "id": "djtouchette.project-board",
       "name": "Project Board",
       "dir": "project-board",
