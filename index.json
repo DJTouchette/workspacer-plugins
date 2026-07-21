@@ -122,6 +122,7 @@
       "settings": [
         "repo",
         "token",
+        "adoToken",
         "pollSeconds",
         "notifyRuns",
         "notifyPrs"
