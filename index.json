@@ -5,6 +5,7 @@
     {
       "id": "djtouchette.analytics",
       "name": "Analytics",
+      "version": "1.0.0",
       "dir": "analytics",
       "category": "dashboards",
       "kind": "webview",
@@ -26,6 +27,7 @@
     {
       "id": "djtouchette.cost-hud",
       "name": "Cost HUD",
+      "version": "1.0.0",
       "dir": "cost-hud",
       "category": "dashboards",
       "kind": "webview",
@@ -51,6 +53,7 @@
     {
       "id": "djtouchette.fleet-radar",
       "name": "Fleet Radar",
+      "version": "1.0.0",
       "dir": "fleet-radar",
       "category": "dashboards",
       "kind": "webview",
@@ -77,6 +80,7 @@
     {
       "id": "djtouchette.focus-tracker",
       "name": "Focus Tracker",
+      "version": "1.0.0",
       "dir": "focus-tracker",
       "category": "dashboards",
       "kind": "webview",
@@ -102,6 +106,7 @@
     {
       "id": "djtouchette.shiplight",
       "name": "Shiplight",
+      "version": "1.0.0",
       "dir": "shiplight",
       "category": "dashboards",
       "kind": "sidecar",
@@ -131,6 +136,7 @@
     {
       "id": "djtouchette.project-board",
       "name": "Project Board",
+      "version": "1.0.0",
       "dir": "project-board",
       "category": "workbench",
       "kind": "webview",
@@ -152,6 +158,7 @@
     {
       "id": "djtouchette.project-notes",
       "name": "Project Notes",
+      "version": "1.0.0",
       "dir": "project-notes",
       "category": "workbench",
       "kind": "webview",
@@ -173,6 +180,7 @@
     {
       "id": "djtouchette.worktree-janitor",
       "name": "Worktree Janitor",
+      "version": "1.0.0",
       "dir": "worktree-janitor",
       "category": "workbench",
       "kind": "sidecar",
@@ -193,6 +201,7 @@
     {
       "id": "djtouchette.ci-watcher",
       "name": "CI Watcher",
+      "version": "1.0.0",
       "dir": "ci-watcher",
       "category": "automation",
       "kind": "sidecar",
@@ -221,6 +230,7 @@
     {
       "id": "djtouchette.escalation-chains",
       "name": "Escalation Chains",
+      "version": "1.0.0",
       "dir": "escalation-chains",
       "category": "automation",
       "kind": "sidecar",
@@ -252,6 +262,7 @@
     {
       "id": "djtouchette.fleet-guardian",
       "name": "Fleet Guardian",
+      "version": "1.0.0",
       "dir": "fleet-guardian",
       "category": "automation",
       "kind": "sidecar",
@@ -282,6 +293,7 @@
     {
       "id": "djtouchette.policy-approver",
       "name": "Policy Approver",
+      "version": "1.0.0",
       "dir": "policy-approver",
       "category": "automation",
       "kind": "sidecar",
@@ -310,6 +322,7 @@
     {
       "id": "djtouchette.test-on-save",
       "name": "Test on Save",
+      "version": "1.0.0",
       "dir": "test-on-save",
       "category": "automation",
       "kind": "sidecar",
@@ -338,6 +351,7 @@
     {
       "id": "djtouchette.typecheck-gate",
       "name": "Typecheck Gate",
+      "version": "1.0.0",
       "dir": "typecheck-gate",
       "category": "automation",
       "kind": "sidecar",
@@ -365,6 +379,7 @@
     {
       "id": "djtouchette.phone-push",
       "name": "Phone Push",
+      "version": "1.0.0",
       "dir": "phone-push",
       "category": "reach",
       "kind": "sidecar",
@@ -391,6 +406,7 @@
     {
       "id": "djtouchette.slack-bridge",
       "name": "Slack Bridge",
+      "version": "1.0.0",
       "dir": "slack-bridge",
       "category": "reach",
       "kind": "sidecar",
@@ -423,6 +439,7 @@
     {
       "id": "djtouchette.standup-digest",
       "name": "Standup Digest",
+      "version": "1.0.0",
       "dir": "standup-digest",
       "category": "reach",
       "kind": "sidecar",

@@ -66,6 +66,7 @@ def entry(dirname):
     return {
         "id": manifest["id"],
         "name": manifest.get("name", dirname),
+        "version": manifest.get("version", ""),
         "dir": dirname,
         "category": CATEGORIES[dirname],
         "kind": "sidecar" if manifest.get("server") else "webview",
