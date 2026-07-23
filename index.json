@@ -106,7 +106,7 @@
     {
       "id": "djtouchette.shiplight",
       "name": "Shiplight",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "shiplight",
       "category": "dashboards",
       "kind": "sidecar",
@@ -201,7 +201,7 @@
     {
       "id": "djtouchette.ci-watcher",
       "name": "CI Watcher",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "ci-watcher",
       "category": "automation",
       "kind": "sidecar",
@@ -224,13 +224,14 @@
       "emits": [],
       "settings": [
         "pollSeconds",
-        "repo"
+        "repo",
+        "notify"
       ]
     },
     {
       "id": "djtouchette.escalation-chains",
       "name": "Escalation Chains",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "escalation-chains",
       "category": "automation",
       "kind": "sidecar",
@@ -262,7 +263,7 @@
     {
       "id": "djtouchette.fleet-guardian",
       "name": "Fleet Guardian",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "fleet-guardian",
       "category": "automation",
       "kind": "sidecar",
@@ -293,7 +294,7 @@
     {
       "id": "djtouchette.policy-approver",
       "name": "Policy Approver",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "policy-approver",
       "category": "automation",
       "kind": "sidecar",
@@ -313,16 +314,19 @@
       "consumes": [
         "agent.state_changed"
       ],
-      "emits": [],
+      "emits": [
+        "notify.post"
+      ],
       "settings": [
         "autoApproveReadonly",
-        "blockPatterns"
+        "blockPatterns",
+        "auditTrail"
       ]
     },
     {
       "id": "djtouchette.test-on-save",
       "name": "Test on Save",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "test-on-save",
       "category": "automation",
       "kind": "sidecar",
@@ -334,24 +338,26 @@
         "Test on Save"
       ],
       "capabilities": [
-        "agents.sendMessage",
-        "notifications.post"
+        "agents.sendMessage"
       ],
       "consumes": [
         "fs.changed",
         "agent.state_changed",
         "agent.snapshot"
       ],
-      "emits": [],
+      "emits": [
+        "notify.post"
+      ],
       "settings": [
         "testCommand",
-        "debounceMs"
+        "debounceMs",
+        "notify"
       ]
     },
     {
       "id": "djtouchette.typecheck-gate",
       "name": "Typecheck Gate",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "typecheck-gate",
       "category": "automation",
       "kind": "sidecar",
@@ -373,13 +379,14 @@
       ],
       "emits": [],
       "settings": [
-        "checkCommand"
+        "checkCommand",
+        "notify"
       ]
     },
     {
       "id": "djtouchette.phone-push",
       "name": "Phone Push",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "phone-push",
       "category": "reach",
       "kind": "sidecar",
@@ -406,7 +413,7 @@
     {
       "id": "djtouchette.slack-bridge",
       "name": "Slack Bridge",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "slack-bridge",
       "category": "reach",
       "kind": "sidecar",
@@ -439,7 +446,7 @@
     {
       "id": "djtouchette.standup-digest",
       "name": "Standup Digest",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "standup-digest",
       "category": "reach",
       "kind": "sidecar",
