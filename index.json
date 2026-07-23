@@ -106,7 +106,7 @@
     {
       "id": "djtouchette.shiplight",
       "name": "Shiplight",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "dir": "shiplight",
       "category": "dashboards",
       "kind": "sidecar",
