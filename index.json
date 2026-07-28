@@ -179,6 +179,38 @@
       "settings": []
     },
     {
+      "id": "djtouchette.replay-theater",
+      "name": "Replay Theater",
+      "version": "1.0.0",
+      "dir": "replay-theater",
+      "category": "workbench",
+      "kind": "webview",
+      "icon": "🎬",
+      "description": "Scrub any past agent session like video — and see the real files at every step.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-replay-theater",
+      "install": "DJTouchette/workspacer-plugin-replay-theater",
+      "panes": [
+        "Replay Theater"
+      ],
+      "capabilities": [
+        "sessions.recent",
+        "sessions.transcript",
+        "replay.open",
+        "replay.seek",
+        "replay.read",
+        "replay.diff",
+        "replay.close"
+      ],
+      "consumes": [],
+      "emits": [
+        "command.focus_agent"
+      ],
+      "settings": [
+        "playbackMs",
+        "showThinking"
+      ]
+    },
+    {
       "id": "djtouchette.worktree-janitor",
       "name": "Worktree Janitor",
       "version": "1.0.0",
@@ -322,6 +354,47 @@
         "autoApproveReadonly",
         "blockPatterns",
         "auditTrail"
+      ]
+    },
+    {
+      "id": "djtouchette.second-opinion",
+      "name": "Second Opinion",
+      "version": "1.0.0",
+      "dir": "second-opinion",
+      "category": "automation",
+      "kind": "sidecar",
+      "icon": "🧭",
+      "description": "Before an agent executes its plan, have a different model say whether the idea is sound.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-second-opinion",
+      "install": "DJTouchette/workspacer-plugin-second-opinion",
+      "panes": [
+        "Second Opinion"
+      ],
+      "capabilities": [
+        "sessions.snapshot",
+        "sessions.conversation",
+        "agents.list",
+        "agents.spawn",
+        "agents.sendMessage",
+        "claude.approve",
+        "claude.signal",
+        "notifications.post"
+      ],
+      "consumes": [
+        "agent.state_changed",
+        "command.second_opinion"
+      ],
+      "emits": [
+        "second_opinion.verdict"
+      ],
+      "settings": [
+        "provider",
+        "model",
+        "effort",
+        "action",
+        "timeoutSec",
+        "retireReviewer",
+        "sameProviderOk"
       ]
     },
     {

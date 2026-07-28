@@ -25,6 +25,7 @@ A machine-readable version of this catalog lives in [`index.json`](index.json) (
 | 🗒️ **Project Notes** | [`workspacer-plugin-project-notes`](https://github.com/DJTouchette/workspacer-plugin-project-notes) | Per-project markdown notes with tags — saved in the project, shared by every agent working in it. |
 | 📋 **Project Board** | [`workspacer-plugin-project-board`](https://github.com/DJTouchette/workspacer-plugin-project-board) | A kanban board per project — drag cards across columns, tag them, and the board travels with the repo. |
 | 🌳 **Worktree Janitor** | [`workspacer-plugin-worktree-janitor`](https://github.com/DJTouchette/workspacer-plugin-worktree-janitor) | See every git worktree your agents have sprouted and prune the dead ones in one click. |
+| 🎬 **Replay Theater** | [`workspacer-plugin-replay-theater`](https://github.com/DJTouchette/workspacer-plugin-replay-theater) | Scrub any past session like video — the repo as it was, re-edited step by step, with a live diff. |
 
 ### Automation (sidecars — always on, even with their pane closed)
 
@@ -32,6 +33,7 @@ A machine-readable version of this catalog lives in [`index.json`](index.json) (
 |---|---|---|
 | ⚖️ **Policy Approver** | [`workspacer-plugin-policy-approver`](https://github.com/DJTouchette/workspacer-plugin-policy-approver) | Supervise by exception: auto-approve read-only tools, hard-block dangerous ones (`rm -rf`, force-push, …). |
 | 🛡 **Fleet Guardian** | [`workspacer-plugin-fleet-guardian`](https://github.com/DJTouchette/workspacer-plugin-fleet-guardian) | Autonomy with brakes: pause the spendiest agent near a rate limit, downgrade models past a budget. |
+| 🧭 **Second Opinion** | [`workspacer-plugin-second-opinion`](https://github.com/DJTouchette/workspacer-plugin-second-opinion) | Before an agent executes its plan, have a different model say whether the idea is sound. |
 | 🔗 **Escalation Chains** | [`workspacer-plugin-escalation-chains`](https://github.com/DJTouchette/workspacer-plugin-escalation-chains) | Self-healing fleet: auto-spawn a successor (with a handoff brief) when an agent or workflow fails. |
 | 🚪 **Typecheck Gate** | [`workspacer-plugin-typecheck-gate`](https://github.com/DJTouchette/workspacer-plugin-typecheck-gate) | Don't let an agent "finish" red: gate the turn on a passing check command and feed errors back. |
 | 🧪 **Test on Save** | [`workspacer-plugin-test-on-save`](https://github.com/DJTouchette/workspacer-plugin-test-on-save) | Run the test suite when an agent edits code; failing output goes straight back to the agent. |

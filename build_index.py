@@ -32,6 +32,8 @@ CATEGORIES = {
     "project-notes": "workbench",
     "project-board": "workbench",
     "worktree-janitor": "workbench",
+    "replay-theater": "workbench",
+    "second-opinion": "automation",
     "slack-bridge": "reach",
     "phone-push": "reach",
     "standup-digest": "reach",
