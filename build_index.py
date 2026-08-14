@@ -29,6 +29,7 @@ CATEGORIES = {
     "ci-watcher": "automation",
     "analytics": "dashboards",
     "shiplight": "dashboards",
+    "jira": "workbench",
     "project-notes": "workbench",
     "project-board": "workbench",
     "worktree-janitor": "workbench",

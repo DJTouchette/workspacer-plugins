@@ -106,7 +106,7 @@
     {
       "id": "djtouchette.shiplight",
       "name": "Shiplight",
-      "version": "1.2.0",
+      "version": "1.4.0",
       "dir": "shiplight",
       "category": "dashboards",
       "kind": "sidecar",
@@ -132,6 +132,37 @@
         "notifyRuns",
         "notifyRunStarts",
         "notifyPrs"
+      ]
+    },
+    {
+      "id": "djtouchette.jira",
+      "name": "Jira",
+      "version": "1.0.0",
+      "dir": "jira",
+      "category": "workbench",
+      "kind": "sidecar",
+      "icon": "🎫",
+      "description": "Your Jira queue in workspacer — and one click from a ticket to an agent working it.",
+      "repo": "https://github.com/DJTouchette/workspacer-plugin-jira",
+      "install": "DJTouchette/workspacer-plugin-jira",
+      "panes": [
+        "Jira"
+      ],
+      "capabilities": [
+        "agents.spawn",
+        "agents.sendMessage",
+        "notifications.post"
+      ],
+      "consumes": [],
+      "emits": [],
+      "settings": [
+        "baseUrl",
+        "email",
+        "apiToken",
+        "jql",
+        "provider",
+        "pollSeconds",
+        "notifyNew"
       ]
     },
     {

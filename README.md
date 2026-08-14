@@ -24,6 +24,7 @@ A machine-readable version of this catalog lives in [`index.json`](index.json) (
 |---|---|---|
 | 🗒️ **Project Notes** | [`workspacer-plugin-project-notes`](https://github.com/DJTouchette/workspacer-plugin-project-notes) | Per-project markdown notes with tags — saved in the project, shared by every agent working in it. |
 | 📋 **Project Board** | [`workspacer-plugin-project-board`](https://github.com/DJTouchette/workspacer-plugin-project-board) | A kanban board per project — drag cards across columns, tag them, and the board travels with the repo. |
+| 🎫 **Jira** | [`workspacer-plugin-jira`](https://github.com/DJTouchette/workspacer-plugin-jira) | Your Jira queue as ticket cards — one click spawns an agent on a ticket with a brief built from it. |
 | 🌳 **Worktree Janitor** | [`workspacer-plugin-worktree-janitor`](https://github.com/DJTouchette/workspacer-plugin-worktree-janitor) | See every git worktree your agents have sprouted and prune the dead ones in one click. |
 | 🎬 **Replay Theater** | [`workspacer-plugin-replay-theater`](https://github.com/DJTouchette/workspacer-plugin-replay-theater) | Scrub any past session like video — the repo as it was, re-edited step by step, with a live diff. |
 
