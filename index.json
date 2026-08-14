@@ -137,7 +137,7 @@
     {
       "id": "djtouchette.jira",
       "name": "Jira",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "dir": "jira",
       "category": "workbench",
       "kind": "sidecar",
